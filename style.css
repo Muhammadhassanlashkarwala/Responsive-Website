@@ -16,7 +16,6 @@ body{
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
-  
 }
 .text_container{
     color: black;
@@ -27,6 +26,7 @@ body{
 .lg_text{
     font-size: 48px;
     font-weight: 800;
+   
 }
 .black_Box{
     background: black;
