@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html ,
+body{
+    line-height: 1.2;
+    font-weight: 300;
+    font-family:'Roboto', sans-serif;
+}
+.hero_section{
+    background-image: url(images/hero_image.avif);
+    min-height: 120vh;
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.text_container{
+    color: black;
+    max-width: 900px;
+    padding-left:  20px; 
+    margin: left auto;
+}
+.lg_text{
+    font-size: 48px;
+    font-weight: 800;
+}
+.black_Box{
+    background: black;
+    padding: 20px;
+}
+.black_Box h2{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+.black_Box h2 span{
+    font-size: 64px;
+    font-weight: 400;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+.grid_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+ max-width: 320px;
+ height: 350px;
+ border-radius: 10px;
+ box-shadow:3px 5px 5px rgba(1,1, 1, 0.3);
+ transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+}
+.Contact , .About{
+    padding: 32px;
+    flex: 1;
+    color: white;
+min-height: 300px;
+}
+.Contact{
+    background: #515603;
+}
+.About{
+    background: #722300;
+}
+.Contact p, .About p{
+    margin-bottom: 20px;
+}
+.Contact h2, .About h2{
+    font-size: 48px;
+    font-weight: 300;
+}
+footer{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 20px;
+    color: white;
+}
+@media(max-width:786px){
+    .hero_section{
+        min-height: 60vh;
+    }
+    .text_container{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .lg_text{
+        font-size: 32px;
+    }
+    .black_box h2{
+        font-size: 24px;
+    }
+    .black_box h2 span{
+        font-weight: 400;
+        font-size: 32px;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .contact h2,.about h2{
+        font-size: 32px;
+    }
+    } 
